@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.open i,
+details[open] summary i {
+  @apply -rotate-180;
+}
+
+button > i {
+  pointer-events: none;
+}
+
+#menu-btn > img.open {
+  content: url("../images/icon-close-menu.svg");
+}
